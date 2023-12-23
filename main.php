@@ -8,4 +8,3 @@ do {
     echo 'ゲームを続けますか？(Y/N)' . PHP_EOL;
     $res = trim(fgets(STDIN));
 } while ($res == 'y');
-?>
