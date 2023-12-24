@@ -1,4 +1,5 @@
 <?
+
 require_once "Card.php";
 
 class Player
@@ -60,7 +61,7 @@ class Dealer
 
     public function SetDealer($card)
     {
-        $this->hand[] = $card;
+        $this->hand[] = clone $card;
     }
 
     public function GetHand($turn)
